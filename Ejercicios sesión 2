@@ -1,0 +1,51 @@
+//Ejercicio 1
+Console.WriteLine("Escribe tu nombre");
+string nombre = Console.ReadLine();
+Console.WriteLine("Escribe tu apellido");
+string apellido = Console.ReadLine();
+Console.WriteLine("Por favor ingrese su edad:");
+int edad = int.Parse(Console.ReadLine());
+Console.WriteLine("¿Sabe programar? (Sí o No)");
+string sabeProgramarString = Console.ReadLine();
+bool sabeProgramar = sabeProgramarString.ToLower() == "sí" || sabeProgramarString.ToLower() == "si";
+
+// Generamos el mensaje utilizando las variables que hemos recibido
+string mensaje = $"Hola {nombre} {apellido}, tienes {edad} años y {(sabeProgramar ? "sí" : "no")} sabes programar.";
+// Mostramos el mensaje en pantalla
+Console.WriteLine(mensaje);
+
+//Ejercicio 2
+
+int puertas;
+int ruedas;
+string marca;
+bool itvVigente;
+
+float peso;
+float largo;
+string material;
+string color;
+
+//Ejercicio 3
+int number = 20;
+if (number >= 18)
+{
+    //La condición se cumple
+}
+char letter = 'a';
+if (letter == 'a')
+{
+    //La condición se cumple
+}
+bool condition1 = true;
+bool condition2 = true;
+if (condition1 && condition2)
+{
+    //Ambas condiciones se cumplen
+}
+bool condition3 = true;
+bool condition4 = false;
+if (condition3 || condition4) ;
+{
+    //Al menos una condición se cumple
+}
